@@ -1,0 +1,140 @@
+/* General Body Styles with Background Gradient */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa; /* Base background color */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f4f7fa, #e1d5f6); /* Light gradient with #8a4de6 */
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    color: #343a40;
+    margin-top: 30px;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+/* Login Container Styles */
+.login-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9; /* White background for the box */
+    border-left: 5px solid #8a4de6; /* Adding a light border shade of #8a4de6 */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for login container */
+.login-container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Input Fields Styles */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+    transition: border 0.3s ease;
+}
+
+/* Focus Effect for Inputs */
+input[type="text"]:focus, input[type="password"]:focus {
+    border: 1px solid #8a4de6; /* Light purple border on focus */
+    outline: none;
+}
+
+/* Button Styles for Sign In */
+button.signin-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #8a4de6; /* Primary button color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7), 
+                 -1px -1px 2px rgba(255, 255, 255, 0.5);
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect for Button */
+button.signin-button:hover {
+    background-color: #7325d2; /* Darker shade on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Active Effect for Button */
+button.signin-button:active {
+    transform: scale(0.95);
+}
+
+/* Message Styles */
+#success-message, #error-message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#error-message {
+    color: red;
+    font-weight: bold;
+}
+
+#success-message {
+    color: green;
+    font-weight: bold;
+}
+
+/* Additional Styles for Body Background and Container */
+body {
+    background: linear-gradient(135deg, #f4f7fa, #e0eaf5); /* Updated gradient */
+}
+
+/* Login Container Padding */
+.login-container {
+    padding: 40px;
+}
+
+/* Hover Effect for Input Fields */
+input[type="text"]:hover, input[type="password"]:hover {
+    border-color: #8a4de6; /* Light purple border on hover */
+}
+
+/* Rounded Corners for Inputs and Button */
+input[type="text"], input[type="password"], button.signin-button {
+    border-radius: 8px;
+}
+
+/* Focus Effect for Inputs */
+input[type="text"]:focus, input[type="password"]:focus {
+    box-shadow: 0 0 8px rgba(138, 77, 230, 0.4); /* Light purple shadow on focus */
+}
+
+/* Background Color (bc) for the Entire Page */
+body {
+    background-color: #8a4de6; /* Apply background color #8a4de6 */
+    background: linear-gradient(135deg, #8a4de6, #e1d5f6); /* Gradient with bc shade */
+}

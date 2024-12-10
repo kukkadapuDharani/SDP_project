@@ -1,0 +1,158 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Soft light gray background for the page */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for awards section */
+.awards-container {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between; /* Space between sidebar and content */
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 20%;
+    background-color: #8a4de6; /* Purple background for the sidebar */
+    padding: 30px 20px;
+    color: white;
+    text-align: center;
+    border-radius: 8px 0 0 8px; /* Rounded corners for a smooth transition */
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    min-height: 100vh; /* Sidebar full height */
+}
+
+/* Sidebar .back-btn Styling */
+.sidebar .back-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Sidebar hover effect for back button */
+.sidebar .back-btn:hover {
+    color: #ffffff; /* White color on hover */
+}
+
+/* Main Content Styling */
+.content {
+    width: 75%;
+    padding: 20px;
+    background-color: #ffffff; /* White background for content section */
+    border-radius: 0 8px 8px 0; /* Rounded corners for the content section */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    min-height: 100vh; /* Content full height */
+}
+
+/* Heading Styling */
+h2 {
+    color: #8a4de6; /* Purple color for headings */
+    font-size: 2rem; /* Larger font size for emphasis */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center; /* Center align the heading */
+}
+
+/* Search Bar Styling */
+.search-bar {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 6px; /* Rounded corners for input */
+    border: 1px solid #8a4de6; /* Purple border */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+/* Focus effect for search bar */
+.search-bar:focus {
+    border-color: #8a4de6; /* Purple border when focused */
+    box-shadow: 0 0 5px rgba(138, 77, 230, 0.5); /* Soft purple glow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Table Styling */
+.awards-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px; /* Rounded corners for table */
+    overflow: hidden; /* Hide overflow from rounded corners */
+}
+
+/* Table Header Styling */
+.awards-table th {
+    padding: 12px;
+    background-color: #8a4de6; /* Purple background for headers */
+    color: white;
+    text-align: left;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* Table Cell Styling */
+.awards-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+/* Table Row Hover Effect */
+.awards-table tr:hover {
+    background-color: #f1f1f1; /* Light gray background on hover */
+}
+
+/* Button Styling */
+button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #8a4de6; /* Purple background for submit button */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    margin-top: 20px; /* Space above the button */
+    text-align: center;
+    width: 100%; /* Full width button */
+}
+
+/* Button Hover Effect */
+button[type="submit"]:hover {
+    background-color: #7a3acc; /* Slightly darker purple on hover */
+    transform: scale(1.05); /* Slight scale effect when hovered */
+}
+
+/* Button Press Effect */
+button[type="submit"]:active {
+    transform: scale(0.95); /* Shrink effect on click */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .awards-container {
+        flex-direction: column; /* Stack sidebar and content vertically */
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        width: 100%;
+    }
+}

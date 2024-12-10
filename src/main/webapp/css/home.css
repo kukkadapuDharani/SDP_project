@@ -1,0 +1,135 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #dcd6f7, #e6e6fa); /* Soft gradient background */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #8a4de6; /* Purple sidebar */
+    width: 20%;
+    padding: 30px 20px; /* Added padding for better spacing */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow on the sidebar */
+}
+
+.sidebar h1 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px; /* Increased margin for better spacing */
+    letter-spacing: 1px; /* Slight letter spacing */
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 25px; /* Increased space between menu items */
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500; /* Medium font weight for a cleaner look */
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    color: #ffd700; /* Gold color on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle background highlight */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.logout a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.logout a:hover {
+    color: #ff6347; /* Tomato red hover effect */
+    transform: scale(1.05);
+}
+
+.main-content {
+    width: 80%;
+    padding: 30px; /* Increased padding for better content spacing */
+    background: #ffffff; /* White background for main content */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 15px; /* Rounded corners */
+    margin-left: 30px; /* Space between sidebar and main content */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.welcome {
+    margin-top: 20px;
+    text-align: center;
+    color: #333333;
+}
+
+.welcome h1 {
+    font-size: 32px; /* Larger font size for the title */
+    margin-bottom: 20px;
+    color: #8a4de6; /* Matching purple with the sidebar */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Subtle text shadow for better visibility */
+}
+
+.welcome p {
+    font-size: 20px;
+    color: #666666;
+    line-height: 1.5; /* Increased line height for readability */
+}
+
+/* Extracurricular logos section */
+.extracurricular-logos {
+    margin-top: 50px; /* Increased margin for better spacing */
+    display: flex;
+    justify-content: space-evenly; /* Evenly space out logos */
+    align-items: center;
+    padding: 30px 0;
+}
+
+.logo-item img {
+    width: 180px; /* Slightly larger logos for emphasis */
+    height: 180px;
+    border-radius: 15px;
+    background: #f0f8ff;
+    padding: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-item img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced hover shadow */
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #8a4de6; /* Matching purple for footer */
+    color: white;
+    font-size: 14px;
+    margin-top: 30px;
+    border-radius: 10px; /* Rounded footer corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}

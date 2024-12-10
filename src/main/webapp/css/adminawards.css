@@ -1,0 +1,200 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Soft light gray background for the page */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for awards section */
+.awards-container {
+    display: flex;
+    padding: 20px;
+    justify-content: flex-start; /* Space between sidebar and content */
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 20%;
+    background-color:  #6A5ACD; /* Dark blue-gray background for the sidebar */
+    padding: 30px 20px;
+    color: white;
+    text-align: center;
+    border-radius: 8px 0 0 8px; /* Rounded corners for a smooth transition */
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    min-height: 200vh; /* Sidebar full height */
+}
+
+/* Sidebar .back-btn Styling */
+.sidebar .back-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Sidebar hover effect for back button */
+.sidebar .back-btn:hover {
+    color: #3498db; /* Light blue color on hover */
+}
+
+/* Main Content Styling */
+.content {
+    width: 75%;
+    padding: 20px;
+    background-color: #ffffff; /* White background for content section */
+    border-radius: 0 8px 8px 0; /* Rounded corners for the content section */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    min-height: 100vh; /* Content full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Heading Styling */
+h2 {
+    color: #333;
+    font-size: 2rem; /* Larger font size for emphasis */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center; /* Center align the heading */
+}
+
+/* Search Bar Styling */
+.search-bar {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 6px; /* Rounded corners for input */
+    border: 1px solid #ccc;
+    transition: all 0.3s ease; /* Smooth transition effect */
+    box-sizing: border-box; /* Ensures padding is included in the element's total width */
+}
+
+/* Focus effect for search bar */
+.search-bar:focus {
+    border-color: #3498db; /* Blue border when focused */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Soft blue glow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Add Award Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+form label {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+form input[type="text"],
+form input[type="date"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+    padding: 12px 20px;
+    background-color:  #6A5ACD; /* Green background for submit button */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%; /* Full width button */
+}
+
+/* Button Hover Effect */
+button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slight scale effect when hovered */
+}
+
+/* Table Styling */
+.awards-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px; /* Rounded corners for table */
+    overflow: hidden; /* Hide overflow from rounded corners */
+}
+
+/* Table Header Styling */
+.awards-table th {
+    padding: 12px;
+    background-color:  #6A5ACD; /* Dark background for headers */
+    color: white;
+    text-align: left;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* Table Cell Styling */
+.awards-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+/* Table Row Hover Effect */
+.awards-table tr:hover {
+    background-color: #f1f1f1; /* Light gray background on hover */
+}
+
+/* Button Styling for Delete Button */
+.delete-btn {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .awards-container {
+        flex-direction: column; /* Stack sidebar and content vertically */
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    /* Adjust form inputs and buttons for smaller screens */
+    form input[type="text"],
+    form input[type="date"] {
+        width: 100%;
+    }
+}

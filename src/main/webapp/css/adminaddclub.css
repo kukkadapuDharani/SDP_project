@@ -1,0 +1,154 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dcdcdc; /* Light gray background color for the entire page */
+    background: linear-gradient(135deg, #8a4de6, #dcdcdc); /* Gradient from purple to light gray for a smooth transition */
+}
+
+/* Add Club Container Styling */
+.add-club-container {
+    width: 40%; /* Reduced width for a more compact design */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the form container */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    text-align: center;
+    transition: transform 0.3s ease; /* Subtle animation effect */
+}
+
+/* Hover Effect on Add Club Container */
+.add-club-container:hover {
+    transform: translateY(-5px); /* Slight lifting effect when hovered */
+}
+
+/* Heading Styling */
+.add-club-container h2 {
+    color: #333;
+    font-size: 1.8rem; /* Reduced font size */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Form Layout */
+.add-club-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Reduced gap between form elements */
+}
+
+/* Label Styling */
+.add-club-container label {
+    font-weight: bold;
+    color: #555;
+    font-size: 0.9rem; /* Reduced font size */
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Input Styling */
+.add-club-container input[type="text"],
+.add-club-container input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 14px; /* Reduced font size */
+    transition: all 0.3s ease;
+}
+
+/* Input Hover Effect */
+.add-club-container input[type="text"]:hover,
+.add-club-container input[type="file"]:hover {
+    background-color: #fafafa; /* Slight background color change */
+    border-color: #8a4de6; /* Purple border on hover */
+}
+
+/* Input Focus Effect */
+.add-club-container input[type="text"]:focus,
+.add-club-container input[type="file"]:focus {
+    border-color: #8a4de6; /* Purple border */
+    box-shadow: 0 0 10px rgba(138, 77, 230, 0.5); /* Purple glow */
+    outline: none;
+}
+
+/* Button Styling */
+.add-club-container button {
+    padding: 12px;
+    background-color: #8a4de6; /* Purple button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px; /* Reduced font size */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(138, 77, 230, 0.2); /* Button shadow for 3D effect */
+}
+
+/* Button Hover Effect */
+.add-club-container button:hover {
+    background-color: #7a3bc0; /* Slightly darker purple on hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(138, 77, 230, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Button Press Effect */
+.add-club-container button:active {
+    transform: scale(0.98); /* Shrink effect */
+}
+
+/* Back Button Styling */
+.add-club-container .back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    color: #8a4de6;
+    text-decoration: none;
+    font-size: 14px; /* Reduced font size */
+    text-align: center;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Back Button Hover Effect */
+.add-club-container .back-btn:hover {
+    color: #7a3bc0;
+    text-decoration: underline;
+}
+
+/* Success Message Styling */
+.add-club-container .success-message {
+    background-color: #e6ffe6;
+    color: #3e8e41;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Error Message Styling */
+.add-club-container .error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .add-club-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .add-club-container h2 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .add-club-container button {
+        font-size: 14px; /* Smaller button text for smaller screens */
+    }
+}

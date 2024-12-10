@@ -1,0 +1,136 @@
+/* Basic Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Soft light gray background */
+}
+
+/* Main Container */
+.schedule-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #6A5ACD; /* Sidebar background color */
+    color: white;
+    width: 180px; /* Smaller sidebar */
+    padding: 15px 10px;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Sidebar Links */
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px; /* Smaller font size */
+    display: block;
+    padding: 8px 0;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #4E3FA6; /* Hover effect with color change */
+    padding-left: 10px; /* Indentation effect */
+    border-radius: 5px;
+}
+
+/* Content Area */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 8px;
+}
+
+/* Heading Styling */
+h2 {
+    color: #333;
+    font-size: 24px; /* Reduced font size */
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Table Styling */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #ffffff; /* White background for the table */
+}
+
+/* Table Header Styling */
+.schedule-table th {
+    background-color: #6A5ACD; /* Matching sidebar color */
+    color: white;
+    font-size: 14px; /* Smaller font size */
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 0.5px;
+}
+
+/* Table Data Styling */
+.schedule-table td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px; /* Smaller font size */
+}
+
+/* Alternating Row Backgrounds */
+.schedule-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Lighter gray for alternating rows */
+}
+
+/* Hover Effect for Table Rows */
+.schedule-table tr:hover {
+    background-color: #e6e6e6; /* Light hover effect */
+    cursor: pointer;
+}
+
+/* Table Cells Word Wrap */
+.schedule-table td {
+    word-wrap: break-word;
+    max-width: 200px; /* Restrict column width */
+}
+
+/* Footer (Optional) */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .schedule-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%; /* Full-width sidebar */
+        margin-bottom: 20px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px; /* Adjusted heading size for small screens */
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+        font-size: 12px; /* Even smaller table text for mobile */
+        padding: 8px 10px;
+    }
+}
